@@ -40,16 +40,19 @@ public class InorderTraversalWithoutRecurssion {
 		}
 
 		// traverse the tree
-		while (stack.size() > 0) {
+		while (stack.size() > 0) 
+		{
 
 			// visit the top node
 			node = stack.pop();
 			System.out.print(node.data + " ");
-			if (node.right != null) {
+			if (node.right != null) 
+			{
 				node = node.right;
 
 				// the next node to be visited is the leftmost
-				while (node != null) {
+				while (node != null) 
+				{
 					stack.push(node);
 					node = node.left;
 				}
